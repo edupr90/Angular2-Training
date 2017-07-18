@@ -15,7 +15,7 @@
             </div>
         </div>
             <div class="table-responsive">
-                <table class="table" *ngIf= 'product && product.length'>
+                <table class="table">
                     <thead>
                         <tr>
                             <th>
@@ -31,8 +31,13 @@
                         </tr>git
                     </thead>
                     <tbody>
-                        <tr *ngFor= '#product of products'>
-                            <td></td>
+                        <tr *ngFor= 'let product of products'>
+                            <td>
+                                <img [src] = 'product.imageUrl'
+                                     [title] = 'product.productName'
+                                     [style.width.px] = 'imageWidth'
+                                     [style.margin.px] = 'imageMargin'>
+                            </td>
                             <td>{{ product.productName }}</td>
                             <td>{{ product.productCode }}</td>
                             <td>{{ product.releaseDate }}</td>
