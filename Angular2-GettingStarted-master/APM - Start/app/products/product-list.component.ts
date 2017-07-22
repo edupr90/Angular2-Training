@@ -1,4 +1,5 @@
 import {Component} from '@angular/core'
+import {Iproduct} from './product'
 
 
 @Component({
@@ -12,7 +13,7 @@ export class ProductListComponent{
     imageMargin: number = 2;
     showImage: boolean = false;
     listFilter: string = 'Cart';
-    products: any[] = [ 
+    products: Iproduct[] = [ 
     {
         "productId": 1,
         "productName": "Leaf Rake",
