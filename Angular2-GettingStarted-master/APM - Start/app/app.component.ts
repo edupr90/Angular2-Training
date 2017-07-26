@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductListComponent } from './products/product-list.component';
-import { ProductService } from './products/product.service' 
+import { ProductService } from './products/product.service';
+
 
 @Component({
     selector: 'pm-app',
